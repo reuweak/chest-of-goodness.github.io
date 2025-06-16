@@ -8,13 +8,11 @@ description: Bookmark this to keep an eye on my project updates
 <html lang="uk">
 <head>
   <meta charset="UTF-8">
-  <title>Зображення велике</title>
-  <meta name="description" content="Натхненна сторінка з гаслом добра, великим зображенням і анімованою кнопкою.">
+  <title>Скриня добра</title>
+  <meta name="description" content="Відкрий скриню добра. Підтримай нас ще раз">
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600&family=Geologica:wght@700&display=swap" rel="stylesheet">
   <style>
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
 
     html, body {
       margin: 0;
@@ -42,31 +40,25 @@ description: Bookmark this to keep an eye on my project updates
       color: #243a57;
     }
 
-        .center-caption {
+    .center-caption {
       font-size: 70px;
       text-align: center;
       opacity: 1;
       transition: opacity 0.5s ease-in-out;
       margin-top: 20px;
     }
+
     .top-caption {
       font-size: 70px;
-      text-align: center;
-      opacity: 1;
-      transition: opacity 0.5s ease-in-out;
       margin-top: 400px;
       color: #243a57;
     }
 
-        .last-caption {
+    .last-caption {
       font-size: 70px;
-      text-align: center;
-      opacity: 1;
-      transition: opacity 0.5s ease-in-out;
       margin-top: 400px;
       color: #243a57;
     }
-
 
     .logos {
       display: flex;
@@ -100,247 +92,175 @@ description: Bookmark this to keep an eye on my project updates
       z-index: 1;
     }
 
-    .button-wrapper {
-          margin-top: -200px;
-        }
+    .button-wrapper { margin-top: -200px; }
 
-    .wave-button {
-          position: relative;
-          display: inline-block;
-          padding: 38px 80px; 
-          color: white;
-          text-transform: uppercase;
-          letter-spacing: 2px;
-          text-decoration: none;
-          font-size: 34px; 
-          overflow: hidden;
-          transition: 0.2s;
-          background: rgba(36, 58, 87, 1);
-          border-radius: 50px; 
-          cursor: pointer;
-          border: none;
-          z-index: 10;
-        }
+    .wave-button, .help-button {
+      position: relative;
+      display: inline-block;
+      padding: 38px 80px;
+      color: white;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 34px;
+      overflow: hidden;
+      transition: 0.2s;
+      background: rgba(36, 58, 87, 1);
+      border-radius: 50px;
+      cursor: pointer;
+      border: none;
+      z-index: 10;
+    }
 
-        .wave-button:hover {
-          box-shadow: 0 0 20px rgba(36, 58, 87, 1), 0 0 60px rgba(36, 58, 87, 1), 0 0 100px rgba(36, 58, 87, 1);
-          transition-delay: 0.1s;
-        }
-
-        .wave-button span {
-          position: absolute;
-          display: block;
-        }
-
-        .wave-button span:nth-child(1) {
-          top: 0;
-          left: -100%;
-          width: 100%;
-          height: 2px;
-          background: linear-gradient(90deg, transparent, white);
-          animation: btn-anim1 1s linear infinite;
-        }
-
-        .wave-button span:nth-child(2) {
-          top: -100%;
-          right: 0;
-          width: 2px;
-          height: 100%;
-          background: linear-gradient(180deg, transparent, white);
-          animation: btn-anim2 1s linear infinite;
-          animation-delay: 0.25s;
-        }
-
-        .wave-button span:nth-child(3) {
-          bottom: 0;
-          right: -100%;
-          width: 100%;
-          height: 2px;
-          background: linear-gradient(270deg, transparent, white);
-          animation: btn-anim3 1s linear infinite;
-          animation-delay: 0.5s;
-        }
-
-        .wave-button span:nth-child(4) {
-          bottom: -100%;
-          left: 0;
-          width: 2px;
-          height: 100%;
-          background: linear-gradient(360deg, transparent, white);
-          animation: btn-anim4 1s linear infinite;
-          animation-delay: 0.75s;
-        }
-
-
-        .two {
-          display: none;
-          opacity: 0;
-          transition: opacity 1s ease-in-out;
-          margin-bottom: 100px;
-        }
-
-      .fly-container {
-        position: relative;
-        width: 100%;
-        max-height: 400px;
-        overflow: hidden;
-        margin: 0 auto;
-      }
-
-      .final-row {
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-        gap: 40px;
-        flex-wrap: wrap;
-      }
-
-      .fly-item {
-        width: 300px;
-        height: 300px;
-        margin-top: 100px;
-        margin-bottom: 700px;
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
-        opacity: 0;
-        transform: translateY(200px);
-        transition: all 0.8s ease;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
-
-      .fly-text {
-        position: absolute;
-        top: 40px;
-        left: 50%;
-        transform: translateX(-50%);
-        font-size: 24px;
-        font-weight: bold;
-        color: #333;
-        opacity: 0;
-        transition: opacity 1s ease;
-        z-index: 10;
-      }
-
-      .fly-in {
-        opacity: 1;
-        transform: translateY(0);
-      }
-
-      .text-in {
-        opacity: 1;
-      }
-          @keyframes btn-anim1 {
-            0% { left: -100%; }
-            50%,100% { left: 100%; }
-          }
-
-          @keyframes btn-anim2 {
-            0% { top: -100%; }
-            50%,100% { top: 100%; }
-          }
-
-          @keyframes btn-anim3 {
-            0% { right: -100%; }
-            50%,100% { right: 100%; }
-          }
-
-          @keyframes btn-anim4 {
-            0% { bottom: -100%; }
-            50%,100% { bottom: 100%; }
-          }
-      .tree {
-      display: none;
-      opacity: 0;
-      transition: opacity 0.5s ease-in-out;
-      margin-bottom: 200px;
-    }  
-
-    .helpbutton-wrapper {
-          margin-top: 50px;
-        }
-
-    .help-button {
-          position: relative;
-          display: inline-block;
-          padding: 38px 80px;
-          color: white;
-          text-transform: uppercase;
-          letter-spacing: 2px;
-          text-decoration: none;
-          font-size: 34px; 
-          overflow: hidden;
-          transition: 0.2s;
-          background: rgba(36, 58, 87, 1);
-          border-radius: 50px;
-          cursor: pointer;
-          border: none;
-          z-index: 10;
-        }
-
-    .help-button:hover {
+    .wave-button:hover, .help-button:hover {
       box-shadow: 0 0 20px rgba(36, 58, 87, 1), 0 0 60px rgba(36, 58, 87, 1), 0 0 100px rgba(36, 58, 87, 1);
       transition-delay: 0.1s;
     }
 
-    .help-button span {
-      position: absolute;
-      display: block;
+    .two { 
+      display: none; 
+      opacity: 0; 
+      transition: opacity 1s ease-in-out; 
+      margin-bottom: 100px; 
+    }
+    
+    .fly-container { 
+      position: relative; 
+      width: 100%; 
+      max-height: 400px; 
+      overflow: hidden; 
+      margin: 0 auto; 
+    }
+    
+    .final-row { 
+      display: flex; 
+      justify-content: center; 
+      align-items: flex-start; 
+      gap: 40px; 
+      flex-wrap: wrap; 
     }
 
-    .help-button span:nth-child(1) {
-      top: 0;
-      left: -100%;
-      width: 100%;
-      height: 2px;
-      background: linear-gradient(90deg, transparent, white);
-      animation: btn-anim1 1s linear infinite;
+    .fly-item {
+      width: 300px; 
+      height: 300px; 
+      margin-top: 100px; 
+      margin-bottom: 700px;
+      background-size: contain; 
+      background-repeat: no-repeat; 
+      background-position: center;
+      opacity: 0; 
+      transform: translateY(200px); 
+      transition: all 0.8s ease;
+      display: flex; 
+      flex-direction: column; 
+      align-items: center;
     }
 
-    .help-button span:nth-child(2) {
-      top: -100%;
-      right: 0;
-      width: 2px;
-      height: 100%;
-      background: linear-gradient(180deg, transparent, white);
-      animation: btn-anim2 1s linear infinite;
-      animation-delay: 0.25s;
+    .fly-text { 
+      position: absolute; 
+      top: 40px; 
+      left: 50%; 
+      transform: translateX(-50%); 
+      font-size: 24px; 
+      font-weight: bold; 
+      color: #333; 
+      opacity: 0; 
+      transition: opacity 1s ease; 
+      z-index: 10; 
+    }
+    
+    .fly-in { 
+      opacity: 1; 
+      transform: translateY(0); 
+    }
+    
+    .text-in { 
+      opacity: 1; 
     }
 
-    .help-button span:nth-child(3) {
-      bottom: 0;
-      right: -100%;
-      width: 100%;
-      height: 2px;
-      background: linear-gradient(270deg, transparent, white);
-      animation: btn-anim3 1s linear infinite;
-      animation-delay: 0.5s;
+    .tree { 
+      display: none; 
+      opacity: 0; 
+      transition: opacity 0.5s ease-in-out; 
+      margin-bottom: 200px; 
     }
-
-    .help-button span:nth-child(4) {
-      bottom: -100%;
-      left: 0;
-      width: 2px;
-      height: 100%;
-      background: linear-gradient(360deg, transparent, white);
-      animation: btn-anim4 1s linear infinite;
-      animation-delay: 0.75s;
+    
+    .helpbutton-wrapper { 
+      margin-top: 50px; 
     }
 
     .qr {
       width: 80%;
       display: flex;
-      flex-direction: row; 
+      flex-direction: row;
       justify-content: center;
-      align-items: center; 
-      max-width: 600px; 
+      align-items: center;
+      max-width: 600px;
       height: auto;
-      display: inline-block; 
-      margin: 73px 30px; 
+      display: inline-block;
+      margin: 73px 30px;
     }
- </style>
+
+    /* === Адаптація для мобільних === */
+    @media (max-width: 768px) {
+      .top-text, .top-caption, .center-caption, .last-caption {
+        font-size: 28px;
+        margin-top: 40px;
+        padding: 10px;
+      }
+
+      .logos { 
+        gap: 20px; 
+        flex-direction: column; 
+      }
+      
+      .logos img { 
+        max-width: 80%; 
+      }
+
+      .center-image { 
+        width: 90%; 
+      }
+      
+      .cdaka-image { 
+        width: 70%; 
+        margin-top: 0; 
+      }
+
+      .button-wrapper { 
+        margin-top: -80px; 
+      }
+
+      .wave-button, .help-button {
+        padding: 20px 40px;
+        font-size: 18px;
+      }
+
+      .final-row { 
+        gap: 20px; 
+      }
+      
+      .fly-item {
+        width: 150px;
+        height: 150px;
+        margin-top: 50px;
+        margin-bottom: 200px;
+      }
+
+      .fly-text { 
+        font-size: 16px; 
+        top: 20px; 
+      }
+
+      .qr { 
+        width: 90%; 
+        margin: 40px 20px; 
+      }
+
+      .tree { 
+        margin-bottom: 100px; 
+      }
+    }
+  </style>
 </head>
 <body>
 <audio id="myAudio">
@@ -348,9 +268,7 @@ description: Bookmark this to keep an eye on my project updates
   Ваш браузер не підтримує аудіо.
 </audio>
 
-
-
-  <section class="one">
+<section class="one">
     <div class="top-text">
       Кожен акт добра — це промінь світла у нашому світі
     </div>
@@ -427,7 +345,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   let animationStarted = false; 
 
-  // Знаходимо аудіо-елемент
   const audio = document.getElementById('myAudio');
 
   function animateCaptionText() {
@@ -500,7 +417,5 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 </script>
-
-
 </body>
 </html>
