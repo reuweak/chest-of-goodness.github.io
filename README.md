@@ -8,12 +8,16 @@ description: Bookmark this to keep an eye on my project updates
 <html lang="uk">
 <head>
   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Скриня добра</title>
-  <meta name="description" content="Відкрий скриню добра. Підтримай нас ще раз">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:title" content="Скриня добра">
+  <meta property="og:description" content="Відкрий скарб добра, підтримай нас ще раз">
+  <meta property="og:image" content="https://example.com/images/home.png">
+  <meta property="og:url" content="https://example.com">
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600&family=Geologica:wght@700&display=swap" rel="stylesheet">
   <style>
-    * { box-sizing: border-box; }
+    * { 
+      box-sizing: border-box; 
+    }
 
     html, body {
       margin: 0;
@@ -212,10 +216,12 @@ description: Bookmark this to keep an eye on my project updates
       .logos { 
         gap: 20px; 
         flex-direction: column; 
+        justify-content: center;
+        align-items: center;
       }
       
       .logos img { 
-        max-width: 80%; 
+        max-width: 90%; 
       }
 
       .center-image { 
@@ -256,7 +262,11 @@ description: Bookmark this to keep an eye on my project updates
         width: 80%; 
         margin: 40px 20px; 
       }
-
+    
+      .two { 
+        margin-bottom: -150px; 
+      }
+   
       .tree { 
         margin-bottom: 100px; 
       }
