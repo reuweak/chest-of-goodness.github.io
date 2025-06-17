@@ -8,6 +8,7 @@ description: Bookmark this to keep an eye on my project updates
 <html lang="uk">
 <head>
   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Скриня добра</title>
   <meta name="description" content="Відкрий скриню добра. Підтримай нас ще раз">
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600&family=Geologica:wght@700&display=swap" rel="stylesheet">
@@ -227,7 +228,7 @@ description: Bookmark this to keep an eye on my project updates
       }
 
       .button-wrapper { 
-        margin-top: -80px; 
+        margin-top: -40px; 
       }
 
       .wave-button, .help-button {
@@ -240,8 +241,8 @@ description: Bookmark this to keep an eye on my project updates
       }
       
       .fly-item {
-        width: 150px;
-        height: 150px;
+        width: 80px;
+        height: 80px;
         margin-top: 50px;
         margin-bottom: 200px;
       }
@@ -252,7 +253,7 @@ description: Bookmark this to keep an eye on my project updates
       }
 
       .qr { 
-        width: 90%; 
+        width: 80%; 
         margin: 40px 20px; 
       }
 
