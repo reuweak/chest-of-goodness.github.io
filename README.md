@@ -25,7 +25,7 @@ description: Bookmark this to keep an eye on my project updates
       width: 100%;
       height: 100%;
       font-family: 'Manrope', sans-serif;
-      background-color: #f5e3c1;
+      background-color: #FFFFE3;
       overflow-x: hidden;
       scroll-behavior: smooth;
     }
@@ -80,7 +80,7 @@ description: Bookmark this to keep an eye on my project updates
     }
 
     .center-image {
-      width: 60%;
+      width: 70%;
       max-height: 150vh;
       height: auto;
       margin-top: -10px;
@@ -97,7 +97,9 @@ description: Bookmark this to keep an eye on my project updates
       z-index: 1;
     }
 
-    .button-wrapper { margin-top: -200px; }
+    .button-wrapper { 
+      margin-top: 50px; 
+    }
 
     .wave-button, .help-button {
       position: relative;
@@ -234,7 +236,7 @@ description: Bookmark this to keep an eye on my project updates
       }
 
       .button-wrapper { 
-        margin-top: -40px; 
+        margin-top: 10px; 
       }
 
       .wave-button, .help-button {
