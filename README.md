@@ -15,9 +15,7 @@ description: Bookmark this to keep an eye on my project updates
   <meta property="og:url" content="https://example.com">
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600&family=Geologica:wght@700&display=swap" rel="stylesheet">
   <style>
-    * { 
-      box-sizing: border-box; 
-    }
+    * { box-sizing: border-box; }
 
     html, body {
       margin: 0;
@@ -97,9 +95,7 @@ description: Bookmark this to keep an eye on my project updates
       z-index: 1;
     }
 
-    .button-wrapper { 
-      margin-top: 50px; 
-    }
+    .button-wrapper { margin-top: 50px; }
 
     .wave-button, .help-button {
       position: relative;
@@ -123,77 +119,70 @@ description: Bookmark this to keep an eye on my project updates
       transition-delay: 0.1s;
     }
 
-    .two { 
-      display: none; 
-      opacity: 0; 
-      transition: opacity 1s ease-in-out; 
-      margin-bottom: 100px; 
+    .two {
+      display: none;
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
+      margin-bottom: 100px;
     }
-    
-    .fly-container { 
-      position: relative; 
-      width: 100%; 
-      max-height: 400px; 
-      overflow: hidden; 
-      margin: 0 auto; 
+
+    .fly-container {
+      position: relative;
+      width: 100%;
+      max-height: 400px;
+      overflow: hidden;
+      margin: 0 auto;
     }
-    
-    .final-row { 
-      display: flex; 
-      justify-content: center; 
-      align-items: flex-start; 
-      gap: 40px; 
-      flex-wrap: wrap; 
+
+    .final-row {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 40px;
+      flex-wrap: wrap;
     }
 
     .fly-item {
-      width: 300px; 
-      height: 300px; 
-      margin-top: 100px; 
+      width: 300px;
+      height: 300px;
+      margin-top: 100px;
       margin-bottom: 700px;
-      background-size: contain; 
-      background-repeat: no-repeat; 
+      background-size: contain;
+      background-repeat: no-repeat;
       background-position: center;
-      opacity: 0; 
-      transform: translateY(200px); 
+      opacity: 0;
+      transform: translateY(200px);
       transition: all 0.8s ease;
-      display: flex; 
-      flex-direction: column; 
+      display: flex;
+      flex-direction: column;
       align-items: center;
     }
 
-    .fly-text { 
-      position: absolute; 
-      top: 40px; 
-      left: 50%; 
-      transform: translateX(-50%); 
-      font-size: 24px; 
-      font-weight: bold; 
-      color: #333; 
-      opacity: 0; 
-      transition: opacity 1s ease; 
-      z-index: 10; 
-    }
-    
-    .fly-in { 
-      opacity: 1; 
-      transform: translateY(0); 
-    }
-    
-    .text-in { 
-      opacity: 1; 
+    .fly-text {
+      position: absolute;
+      top: 40px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 24px;
+      font-weight: bold;
+      color: #333;
+      opacity: 0;
+      transition: opacity 1s ease;
+      z-index: 10;
     }
 
-    .tree { 
-      display: none; 
-      opacity: 0; 
-      transition: opacity 0.5s ease-in-out; 
-      margin-bottom: 200px; 
+    .fly-in { opacity: 1; transform: translateY(0); }
+
+    .text-in { opacity: 1; }
+
+    .tree {
+      display: none;
+      opacity: 0;
+      transition: opacity 0.5s ease-in-out;
+      margin-bottom: 200px;
     }
-    
-    .helpbutton-wrapper { 
-      margin-top: 50px; 
-    }
+
+    .helpbutton-wrapper { margin-top: 50px; }
 
     .qr {
       width: 80%;
@@ -215,39 +204,31 @@ description: Bookmark this to keep an eye on my project updates
         padding: 10px;
       }
 
-      .logos { 
-        gap: 20px; 
-        flex-direction: column; 
+      .logos {
+        gap: 20px;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
       }
-      
-      .logos img { 
-        max-width: 90%; 
+
+      .logos img { max-width: 90%; }
+
+      .center-image { width: 90%; }
+
+      .cdaka-image {
+        width: 70%;
+        margin-top: 0;
       }
 
-      .center-image { 
-        width: 90%; 
-      }
-      
-      .cdaka-image { 
-        width: 70%; 
-        margin-top: 0; 
-      }
-
-      .button-wrapper { 
-        margin-top: 10px; 
-      }
+      .button-wrapper { margin-top: 10px; }
 
       .wave-button, .help-button {
         padding: 20px 40px;
         font-size: 18px;
       }
 
-      .final-row { 
-        gap: 20px; 
-      }
-      
+      .final-row { gap: 20px; }
+
       .fly-item {
         width: 80px;
         height: 80px;
@@ -255,124 +236,109 @@ description: Bookmark this to keep an eye on my project updates
         margin-bottom: 200px;
       }
 
-      .fly-text { 
-        font-size: 16px; 
-        top: 20px; 
+      .fly-text {
+        font-size: 16px;
+        top: 20px;
       }
 
-      .qr { 
-        width: 80%; 
-        margin: 40px 20px; 
+      .qr {
+        width: 80%;
+        margin: 40px 20px;
       }
-    
-      .two { 
-        margin-bottom: -150px; 
-      }
-   
-      .tree { 
-        margin-bottom: 100px; 
-      }
+
+      .two { margin-bottom: -150px; }
+
+      .tree { margin-bottom: 100px; }
     }
   </style>
 </head>
 <body>
+
+<!-- ПЕРЕКЛАДАЧ -->
+<div id="google_translate_element" style="position: absolute; top: 10px; right: 10px; z-index: 9999;"></div>
+
 <audio id="myAudio">
   <source src="./audio/hava-nagila-orchestra-clarinet-7671.mp3" type="audio/mpeg">
   Ваш браузер не підтримує аудіо.
 </audio>
 
 <section class="one">
-    <div class="top-text">
-      Кожен акт добра — це промінь світла у нашому світі
-    </div>
-<div class="logos">
-  <a href="https://www.instagram.com/mazal.tov.zp/" target="_blank">
-    <img src="./images/mazal.png" alt="Mazal Tov Logo">
-  </a>
-  
-  <a href="https://www.facebook.com/HesedMichael.zp.ua/?locale=ru_RU" target="_blank">
-    <img src="./images/bluelogo 1.png" alt="Хесед Міхаель Logo">
-  </a>
-</div>
+  <div class="top-text">Кожен акт добра — це промінь світла у нашому світі</div>
+  <div class="logos">
+    <a href="https://www.instagram.com/mazal.tov.zp/" target="_blank">
+      <img src="./images/mazal.png" alt="Mazal Tov Logo">
+    </a>
+    <a href="https://www.facebook.com/HesedMichael.zp.ua/?locale=ru_RU" target="_blank">
+      <img src="./images/bluelogo 1.png" alt="Хесед Міхаель Logo">
+    </a>
+  </div>
 
-    <img src="./images/home.png" alt="Дім" class="center-image">
+  <img src="./images/home.png" alt="Дім" class="center-image">
 
-    <div class="button-wrapper">
-      <button class="wave-button">
-        ВІДКРИТИ СКАРБ ЦДАКИ
-      </button>
-    </div>
-  </section>
+  <div class="button-wrapper">
+    <button class="wave-button">ВІДКРИТИ СКАРБ ЦДАКИ</button>
+  </div>
+</section>
 
-  <section class="two">
-    <div class="top-caption">
-      Завдяки вашій цдаці ми створюємо безпеку, силу <br> громади та майбутнє для кожного
-    </div>
-    <img src="./images/cdaka.png" alt="Цдака" class="cdaka-image">
-        <div class="center-caption"></div>
-    <div class="fly-container"></div>
-  </section>
+<section class="two">
+  <div class="top-caption">
+    Завдяки вашій цдаці ми створюємо безпеку, силу <br> громади та майбутнє для кожного
+  </div>
+  <img src="./images/cdaka.png" alt="Цдака" class="cdaka-image">
+  <div class="center-caption"></div>
+  <div class="fly-container"></div>
+</section>
 
-  <section class="tree">
-        <div class="last-caption">
-      Нехай ваша доброта повернеться до вас <br> сторицею — תִּזְכּוּ לְמִצְווֹת (тизку ле-міцвот).
-    </div>
-<div class="helpbutton-wrapper">
-  <a href="https://next.privat24.ua/payments/form/%7B%22token%22%3A%22be0ba580-a488-4ab6-b285-4fe127c71313%22%7D" target="_blank">
-    <button class="help-button">
-      ПІДТРИМАТИ ЩЕ РАЗ
-    </button>
-  </a>
-</div>
- <a href="https://www.facebook.com/JCCMazalTov/?locale=ru_RU" target="_blank">
+<section class="tree">
+  <div class="last-caption">
+    Нехай ваша доброта повернеться до вас <br> сторицею — תִּזְכּוּ לְמִצְווֹת (тизку ле-міцвот).
+  </div>
+  <div class="helpbutton-wrapper">
+    <a href="https://next.privat24.ua/payments/form/%7B%22token%22%3A%22be0ba580-a488-4ab6-b285-4fe127c71313%22%7D" target="_blank">
+      <button class="help-button">ПІДТРИМАТИ ЩЕ РАЗ</button>
+    </a>
+  </div>
+
+  <a href="https://www.facebook.com/JCCMazalTov/?locale=ru_RU" target="_blank">
     <img src="./images/qrmazal.png" alt="QR-код Mazal" class="qr">
-</a>
-
-<a href="https://next.privat24.ua/payments/form/%7B%22token%22%3A%22be0ba580-a488-4ab6-b285-4fe127c71313%22%7D" target="_blank">
+  </a>
+  <a href="https://next.privat24.ua/payments/form/%7B%22token%22%3A%22be0ba580-a488-4ab6-b285-4fe127c71313%22%7D" target="_blank">
     <img src="./images/qrhesed.png" alt="QR-код Hesed" class="qr">
-</a>
-   </div>
-  </section>
- 
+  </a>
+</section>
+
 <script>
 document.addEventListener("DOMContentLoaded", () => {
   const button = document.querySelector('.wave-button');
   const sectionTwo = document.querySelector('.two');
   const container = document.querySelector('.fly-container');
   const caption = document.querySelector('.center-caption');
-  const treeSection = document.querySelector('.tree'); 
-
+  const treeSection = document.querySelector('.tree');
   const items = [
     { img: './images/coin.png' },
     { img: './images/dove.png' },
     { img: './images/candle.png' },
     { img: './images/scroll.png' }
   ];
-
   const texts = [
     '«Слова світла, що розпалюють серця»',
     '«Пам’ятаємо. Дякуємо. Надихаємося»',
     '«Кожен вчинок — іскра добра»',
     '«Нехай доброта живе у вічності»'
   ];
-
-  let animationStarted = false; 
-
+  let animationStarted = false;
   const audio = document.getElementById('myAudio');
 
   function animateCaptionText() {
     let index = 0;
-
     function changeText() {
       caption.style.opacity = '0';
-
       setTimeout(() => {
         caption.textContent = texts[index];
         caption.style.opacity = '1';
-
         index++;
         if (index < texts.length) {
-          setTimeout(changeText, 2000); 
+          setTimeout(changeText, 2000);
         } else {
           setTimeout(() => {
             treeSection.style.display = 'block';
@@ -384,51 +350,52 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       }, 500);
     }
-
     changeText();
   }
 
   button.addEventListener('click', () => {
-    if (animationStarted) return;  
-    animationStarted = true;       
-
-    // Програємо аудіо при натисканні
+    if (animationStarted) return;
+    animationStarted = true;
     if (audio) {
-      audio.currentTime = 0; // почати з початку
+      audio.currentTime = 0;
       audio.play();
     }
-
     sectionTwo.style.display = 'block';
     setTimeout(() => {
       sectionTwo.style.opacity = '1';
       sectionTwo.scrollIntoView({ behavior: 'smooth' });
     }, 100);
-
     container.innerHTML = '';
-
     const row = document.createElement('div');
     row.className = 'final-row';
     container.appendChild(row);
-
     let delay = 0;
-
     items.forEach((item) => {
       const wrapper = document.createElement('div');
       wrapper.className = 'fly-item';
       wrapper.style.backgroundImage = `url('${item.img}')`;
-
       row.appendChild(wrapper);
-
       setTimeout(() => {
         wrapper.classList.add('fly-in');
       }, delay);
-
       delay += 1200;
     });
-
     animateCaptionText();
   });
 });
 </script>
+<script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+      pageLanguage: 'uk',
+      includedLanguages: 'uk,en,he,ru',
+      layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+    }, 'google_translate_element');
+  }
+</script>
+<script type="text/javascript" 
+  src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+</script>
+
 </body>
 </html>
